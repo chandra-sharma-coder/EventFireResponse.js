@@ -6,7 +6,7 @@ var eventEmitter = new events.EventEmitter();
 
 //Create an Event handler as fllows;
 var connectHandler = function connected() { 
-    console.log('connection successful./......111');
+    console.log('connection successful.....111');
 
     // Fire the data_received event 
     eventEmitter.emit('data_received');
@@ -17,7 +17,7 @@ eventEmitter.on('connection', connectHandler);
 
 // Bind the data_received event with the anonymous function
 eventEmitter.on('data_received', function(){
-    console.log('Data received Successfully....44444444');
+    console.log('Data received Successfully......444');
 });
 
 //Fire the connection event 
